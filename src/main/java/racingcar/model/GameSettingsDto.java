@@ -1,21 +1,19 @@
 package racingcar.model;
 
-import java.util.List;
-
 public class GameSettingsDto {
-    private List<String> carsName;
-    private int racingCount;
+    private String Names;
+    private int Count;
 
-    public GameSettingsDto(List<String> carsName, int racingCount){
-        this.carsName = carsName;
-        this.racingCount = racingCount;
+    public GameSettingsDto(String carsNames, int racingCount){
+        this.Names = carsNames;
+        this.Count = racingCount;
     }
 
-    public List<String> getCarsName(){
-        return carsName;
+    public String getNames(){
+        return Names;
     }
 
-    public int getRacingCount(){
-        return racingCount;
+    public int getCount(){
+        return Count;
     }
 }

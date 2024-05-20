@@ -1,7 +1,7 @@
 package racingcar.view;
 
 import racingcar.model.CarDto;
-import racingcar.model.WinnerDto;
+import racingcar.model.gameResultDto;
 
 import java.util.List;
 
@@ -27,8 +27,8 @@ public class OutputView {
         }
         printNewLine();
     }
-    public void printWinner(WinnerDto winnerDto){
-        System.out.print(WINNER_ANNOUNCEMENT_MESSAGE + COLON + String.join(SEPARATOR,winnerDto.getWinner()));
+    public void printWinner(gameResultDto gameResultDto){
+        System.out.print(WINNER_ANNOUNCEMENT_MESSAGE + COLON + String.join(SEPARATOR, gameResultDto.getWinner()));
     }
 
     private void printAdvancementCount(int advancementCount){

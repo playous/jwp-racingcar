@@ -1,11 +1,13 @@
 package racingcar;
 
-import racingcar.controller.GameManager;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class RacingCarApplication {
-	public static GameManager gameManager;
+
 	public static void main(String[] args) {
-		gameManager = new GameManager();
-		gameManager.startGame();
+		SpringApplication.run(RacingCarApplication.class, args);
 	}
+
 }
